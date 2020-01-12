@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.PlayerInfoFragment">
+
+    <ImageView
+        android:id="@+id/accountIV"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        tools:src="@tools:sample/avatars" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <TextView
+        android:id="@+id/accountNameTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/account_name"
+        app:layout_constraintStart_toStartOf="@+id/accountIV"
+        app:layout_constraintTop_toBottomOf="@+id/accountIV" />
+
+    <TextView
+        android:id="@+id/accountNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/accountNameTitleTV"
+        app:layout_constraintStart_toEndOf="@+id/accountNameTitleTV"
+        app:layout_constraintTop_toTopOf="@+id/accountNameTitleTV" />
+
+    <TextView
+        android:id="@+id/countryCodeTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/country_code"
+        app:layout_constraintStart_toStartOf="@+id/accountNameTitleTV"
+        app:layout_constraintTop_toBottomOf="@+id/accountNameTitleTV" />
+
+    <TextView
+        android:id="@+id/countryCodeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/countryCodeTitleTV"
+        app:layout_constraintStart_toEndOf="@+id/countryCodeTitleTV"
+        app:layout_constraintTop_toTopOf="@+id/countryCodeTitleTV" />
+
+    <TextView
+        android:id="@+id/soloMmrTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/solo_mmr"
+        app:layout_constraintStart_toStartOf="@+id/countryCodeTitleTV"
+        app:layout_constraintTop_toBottomOf="@+id/countryCodeTitleTV" />
+
+    <TextView
+        android:id="@+id/soloMmrTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/soloMmrTitleTV"
+        app:layout_constraintStart_toEndOf="@+id/soloMmrTitleTV"
+        app:layout_constraintTop_toTopOf="@+id/soloMmrTitleTV" />
+</androidx.constraintlayout.widget.ConstraintLayout>

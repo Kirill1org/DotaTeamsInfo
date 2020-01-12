@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/playerNickTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/nickname_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/playerNickTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Dendi"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/playerNickTitleTV"
+        app:layout_constraintStart_toEndOf="@+id/playerNickTitleTV"
+        app:layout_constraintTop_toTopOf="@+id/playerNickTitleTV" />
+
+    <TextView
+        android:id="@+id/playerGamesTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/games_tv"
+        app:layout_constraintStart_toStartOf="@+id/playerNickTitleTV"
+        app:layout_constraintTop_toBottomOf="@+id/playerNickTitleTV" />
+
+    <TextView
+        android:id="@+id/playerGamesTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="100"
+        app:layout_constraintBottom_toBottomOf="@+id/playerGamesTitleTV"
+        app:layout_constraintStart_toEndOf="@+id/playerGamesTitleTV"
+        app:layout_constraintTop_toTopOf="@+id/playerGamesTitleTV" />
+
+    <TextView
+        android:id="@+id/playerWinTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/wins_player_tv"
+        app:layout_constraintStart_toStartOf="@+id/playerGamesTitleTV"
+        app:layout_constraintTop_toBottomOf="@+id/playerGamesTitleTV" />
+
+    <TextView
+        android:id="@+id/playerWinTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="50"
+        app:layout_constraintBottom_toBottomOf="@+id/playerWinTitleTV"
+        app:layout_constraintStart_toEndOf="@+id/playerWinTitleTV"
+        app:layout_constraintTop_toTopOf="@+id/playerWinTitleTV" />
+
+    <TextView
+        android:id="@+id/playerIsComandTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/is_in_the_team_now_tv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/playerWinTitleTV"
+        app:layout_constraintTop_toBottomOf="@+id/playerWinTitleTV"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/playerIsComandTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="true"
+        app:layout_constraintBottom_toBottomOf="@+id/playerIsComandTitleTV"
+        app:layout_constraintStart_toEndOf="@+id/playerIsComandTitleTV"
+        app:layout_constraintTop_toTopOf="@+id/playerIsComandTitleTV" />
+</androidx.constraintlayout.widget.ConstraintLayout>
